@@ -2,13 +2,13 @@ from telethon import TelegramClient, events, sync
 
 from telethon.tl.functions.messages import GetHistoryRequest, GetBotCallbackAnswerRequest
 
-api_id = 949726
-api_hash = '3492d7632043d2e468baae99c5b283da'
+api_id = xxxxx
+api_hash = 'xxxxxx'
 
 client = TelegramClient('session_name', api_id, api_hash)
 client.start()
 
-channel_uername = '@Fuja123'
+channel_uername = 'xxxxx'
 channel_entity = client.get_entity(channel_username)
 posts = client(GetHistoryRequest(
     peer=channel_entity,
